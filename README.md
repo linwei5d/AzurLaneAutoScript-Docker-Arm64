@@ -1,4 +1,4 @@
-# ALAS Docker-Arm64:
+# AzurLaneAutoScript-Docker-Arm64:
 基于binss大佬镜像打造，适用手机Docker的Alas
 ```
 sudo docker run -d --name="Alas" --net=host --restart=always linwei5d/alas:arm
