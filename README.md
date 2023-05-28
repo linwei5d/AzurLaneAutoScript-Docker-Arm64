@@ -17,7 +17,7 @@ sudo docker run -d --name="Alas" --net=host --restart=always linwei5d/alas:arm
 
 - **额外**：
 
- ① 电脑建议通过Anlink远程管理手机，因为可以启用键盘映射把手机当模拟器玩（手机开机时候要用usb线连anlink然后启用anlink的"wifi连接"功能一遍）
+ ① 电脑建议通过Anlink远程管理手机，因为可以启用键盘映射把手机当模拟器使用（手机开机时候要用usb线连anlink然后启用anlink的"wifi连接"功能一遍）
 
  ② 手机有个息屏运行的软件（同样在酷安找），但是目前跟Anlink不太搭，会被唤醒，需要手动按下音量键息屏
 
