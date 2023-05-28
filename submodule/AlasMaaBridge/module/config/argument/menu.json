@@ -1,0 +1,20 @@
+{
+  "Task": {
+    "Maa": [
+      "Maa",
+      "MaaStartup",
+      "MaaAnnihilation",
+      "MaaMaterial",
+      "MaaFight",
+      "MaaRecruit",
+      "MaaInfrast",
+      "MaaMall",
+      "MaaAward",
+      "MaaRoguelike",
+      "MaaReclamationAlgorithm"
+    ],
+    "Tool": [
+      "MaaCopilot"
+    ]
+  }
+}
