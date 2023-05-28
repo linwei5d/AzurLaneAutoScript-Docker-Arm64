@@ -1,3 +1,14 @@
+# ALAS Docker-Arm64:
+基于binss大佬镜像打造，适用手机Docker的Alas
+```
+sudo docker run -d --name="Alas" --net=host --restart=always linwei5d/alas:arm
+```
+强烈推荐使用docker的Portainer中文镜像进行管理（sudo docker pull 6053537/portainer-ce）
+默认自动进行"Main"配置文件的任务，其中大部分游戏相关的内容需要你进行更改
+建议使用Portainer进入"Alas"容器内控制台，通过设置各种脚本自定义容器重启的时间，因为脚本会不定时卡在奇怪的地方
+手机上面建议下载adb_wifi.apk开启网络adb功能（酷安上面可以下载到）
+电脑建议通过Anlink远程管理手机，因为可以启用键盘映射把手机当模拟器玩（手机开机时候要用usb线连anlink然后启用anlink的"wifi连接"功能一遍）
+手机有个息屏运行的软件（同样在酷安找），但是目前跟Anlink不太搭，会被唤醒，需要手动按下音量键息屏
 **| [English](README_en.md) | 简体中文 | [日本語](README_jp.md) |**
 
 # AzurLaneAutoScript
@@ -84,11 +95,6 @@ GUI development, thanks **[@18870](https://github.com/18870)** , say HURRAY.
 | 剧情自动播放                        | 开启 |
 | 剧情自动播放速度调整                | 特快 |
 
-大世界 => 右上角：雷达 => 指令模块(order)：潜艇支援：
-| 设置名称                                                 | 值               |
-| -------------------------------------------------------- | ---------------- |
-| X 消耗时潜艇出击  |取消勾选|
-
 主界面 => 右下角：建造 => 左侧边栏： 退役 => 左侧齿轮图标：一键退役设置：
 
 | 设置名称                                                 | 值               |
@@ -168,8 +174,7 @@ Alas 仍在活跃开发中，我们会不定期发布未来的工作在 [Issues]
 ## 联系我们 Contact Us
 
 - Discord: [https://discord.gg/AQN6GeJ](https://discord.gg/AQN6GeJ)
-- QQ 三群：[576458886](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Q611gtXy-y0ttnfHOQNegXjerUI2tWIy&authKey=VjW7e8fxtXTN0twcU6%2FZabZ03gKy%2FuhZETQlFDaswupHRDzVO33lsqZloKG8IfR6&noverify=0&group_code=834210833)
-- QQ 二群（已满）：[576458886](https://jq.qq.com/?_wv=1027&k=FUIOAAOm)
+- QQ 二群：[576458886](https://jq.qq.com/?_wv=1027&k=FUIOAAOm)
 - QQ 一群（已满）：[1087735381](https://jq.qq.com/?_wv=1027&k=I4NSqX7g)
 - Bilibili 直播间：https://live.bilibili.com/22216705 ，偶尔直播写Alas，~~为了拯救Alas，Lme决定出道成为偶像~~
 
