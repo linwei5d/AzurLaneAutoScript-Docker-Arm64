@@ -5,21 +5,21 @@ sudo docker run -d --name="Alas" --net=host --restart=always linwei5d/alas:arm
 ```
 - **建议**：
 
-①使用docker的Portainer中文镜像进行管理（sudo docker pull 6053537/portainer-ce）
+ ① 使用docker的Portainer中文镜像进行管理（sudo docker pull 6053537/portainer-ce）
 
-②使用Portainer进入"Alas"容器内控制台，通过设置各种脚本自定义容器重启的时间，因为脚本会不定时卡在奇怪的地方
+ ② 使用Portainer进入"Alas"容器内控制台，通过设置各种脚本自定义容器重启的时间，因为脚本会不定时卡在奇怪的地方
 
-③手机上面下载adb_wifi.apk开启网络adb功能（酷安上面可以下载到）
+ ③ 手机上面下载adb_wifi.apk开启网络adb功能（酷安上面可以下载到）
      
 - **注意**：
 
-默认自动进行"Main"配置文件的任务，其中大部分游戏相关的内容需要你进行更改
+   默认自动进行"Main"配置文件的任务，其中大部分游戏相关的内容需要你进行更改
 
 - **额外**：
 
-①电脑建议通过Anlink远程管理手机，因为可以启用键盘映射把手机当模拟器玩（手机开机时候要用usb线连anlink然后启用anlink的"wifi连接"功能一遍）
+ ① 电脑建议通过Anlink远程管理手机，因为可以启用键盘映射把手机当模拟器玩（手机开机时候要用usb线连anlink然后启用anlink的"wifi连接"功能一遍）
 
-②手机有个息屏运行的软件（同样在酷安找），但是目前跟Anlink不太搭，会被唤醒，需要手动按下音量键息屏
+ ② 手机有个息屏运行的软件（同样在酷安找），但是目前跟Anlink不太搭，会被唤醒，需要手动按下音量键息屏
 
 **| [English](README_en.md) | 简体中文 | [日本語](README_jp.md) |**
 
