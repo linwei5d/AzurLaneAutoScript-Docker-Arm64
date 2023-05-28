@@ -3,7 +3,7 @@
 ```
 sudo docker run -d --name="Alas" --net=host --restart=always linwei5d/alas:arm
 ```
-建议：
+- **建议**：
 
 ①使用docker的Portainer中文镜像进行管理（sudo docker pull 6053537/portainer-ce）
 
@@ -11,11 +11,11 @@ sudo docker run -d --name="Alas" --net=host --restart=always linwei5d/alas:arm
 
 ③手机上面下载adb_wifi.apk开启网络adb功能（酷安上面可以下载到）
      
-注意：
+- **注意**：
 
 默认自动进行"Main"配置文件的任务，其中大部分游戏相关的内容需要你进行更改
 
-额外：
+- **额外**：
 
 ①电脑建议通过Anlink远程管理手机，因为可以启用键盘映射把手机当模拟器玩（手机开机时候要用usb线连anlink然后启用anlink的"wifi连接"功能一遍）
 
