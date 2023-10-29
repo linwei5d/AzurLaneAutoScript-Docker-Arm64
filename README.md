@@ -1,25 +1,36 @@
 # AzurLaneAutoScript-Docker-Arm64:
 基于binss大佬镜像打造，适用手机Docker的Alas
+并非完全开箱即用，但只需挂载储存后复制一遍即可！
+
+Termux操作(必须使用普通用户)开启docker，安装portainer面板(面板地址 127.0.0.1:9000)，命令行部署Alas
 ```
-sudo docker run -d --name="Alas" --net=host --restart=always linwei5d/alas:arm
+sudo DOCKER_RAMDISK=true dockerd --iptables=false > /dev/null 2>&1 &
+sudo docker run -d --name Portainer --net=host --restart=always -v /data/docker/run/docker.sock:/var/run/docker.sock 6053537/portainer-ce
+sudo docker run -d --name="Alas" --net=host --restart=always -v /sdcard:/sdcard linwei5d/alas:arm
+```
+Portainer进入容器内操作(遇到奇怪的bug请去源项目下载最新源码复制到手机的/sdcard/Alas文件夹!)
+```
+rm -rf /app/Alas
+cp /sdcard/Alas /app/Alas -r
 ```
 - **建议**：
 
- ① 使用docker的Portainer中文镜像进行管理（sudo docker pull 6053537/portainer-ce）
+ ① 学会使用docker和Portainer进行管理
 
- ② 使用Portainer进入"Alas"容器内控制台，通过设置各种脚本自定义容器重启的时间，因为脚本会不定时卡在奇怪的地方
+ ② 手机上Magisk安装开机自启网络adb功能（酷安上面可以下载到），alas地址127.0.0.1:5555
 
- ③ 手机上面下载adb_wifi.apk开启网络adb功能（酷安上面可以下载到）
+ ③ 手机上Magisk模块限制充电最大电压（酷安上面可以找到但比较冷门）
      
 - **注意**：
 
-   默认自动进行"Main"配置文件的任务，其中大部分游戏相关的内容需要你进行更改
+   镜像默认自动进行"Main"配置文件的任务（自己复制的Alas则不会自动运行），其中大部分游戏相关的内容需要你进行更改
 
 - **额外**：
+ ① 作者很懒，镜像经常半年一更，所以炸的时候请直接提issue
 
- ① 电脑建议通过Anlink远程管理手机，因为可以启用键盘映射把手机当模拟器使用（手机开机时候要用usb线连anlink然后启用anlink的"wifi连接"功能一遍）
+ ② 电脑建议通过Anlink远程管理手机，因为可以启用键盘映射把手机当模拟器使用（手机开机时候要用usb线连anlink然后启用anlink的"wifi连接"功能一遍）
 
- ② 手机有个息屏运行的软件（同样在酷安找），但是目前跟Anlink不太搭，会被唤醒，需要手动按下音量键息屏
+ ③ 手机有个息屏运行的软件（同样在酷安找），但是目前跟Anlink不太搭，会被唤醒，需要手动按下音量键息屏
 
 **| [English](README_en.md) | 简体中文 | [日本語](README_jp.md) |**
 
