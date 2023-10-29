@@ -1,6 +1,6 @@
 # AzurLaneAutoScript-Docker-Arm64:
 基于binss大佬镜像打造，适用手机Docker的Alas
-并非完全开箱即用，但只需挂载储存后复制一遍即可！
+并非完全开箱即用，但只需挂载储存后复制一遍即可！(~~除非我更新~~)
 
 Termux操作(必须使用普通用户)开启docker，安装portainer面板(面板地址 127.0.0.1:9000)，命令行部署Alas
 ```
