@@ -1,5 +1,5 @@
 # AzurLaneAutoScript-Docker-Arm64:
-基于binss大佬镜像打造，适用手机Docker的Alas
+基于binss大佬镜像打造，适用手机Docker的Alas(Alas访问地址127.0.0.1:22267)
 并非完全开箱即用，但只需挂载储存后复制一遍即可！(~~除非我更新~~)
 
 Termux操作(必须使用普通用户)开启docker，安装portainer面板(面板地址 127.0.0.1:9000)，命令行部署Alas
@@ -17,7 +17,7 @@ cp /sdcard/Alas /app/Alas -r
 
  ① 学会使用docker和Portainer进行管理
 
- ② 手机上Magisk安装开机自启网络adb功能（酷安上面可以下载到），alas地址127.0.0.1:5555
+ ② 手机上Magisk安装开机自启网络adb功能（酷安上面可以下载到），adb地址一般是127.0.0.1:5555
 
  ③ 手机上Magisk模块限制充电最大电压（酷安上面可以找到但比较冷门）
      
