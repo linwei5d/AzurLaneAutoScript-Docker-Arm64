@@ -5,7 +5,7 @@
 Termux操作(必须使用普通用户)开启docker，安装portainer面板(面板地址 127.0.0.1:9000)，命令行部署Alas
 ```
 sudo DOCKER_RAMDISK=true dockerd --iptables=false --dns=223.5.5.5 > /dev/null 2>&1 &
-sudo docker run -d --name Portainer --net=host --dns=223.5.5.5 --restart=always -v /data/docker/run/docker.sock:/var/run/docker.sock 6053537/portainer-ce
+sudo docker run -d --name="Portainer" --net=host --dns=223.5.5.5 --restart=always -v /data/docker/run/docker.sock:/var/run/docker.sock 6053537/portainer-ce
 sudo docker run -d --name="Alas" --net=host --dns=223.5.5.5 --restart=always -v /sdcard:/sdcard linwei5d/alas:arm
 ```
 Portainer进入容器内操作(遇到奇怪的bug请去源项目下载最新源码复制到手机的/sdcard/Alas文件夹!)
