@@ -1,4 +1,5 @@
 # AzurLaneAutoScript-Docker-Arm64:
+目前最新版本为2024-05-19
 基于binss大佬镜像打造，适用手机Docker的Alas(Alas访问地址127.0.0.1:22267)
 并非完全开箱即用，但只需挂载储存后复制一遍即可！(~~除非我更新~~)
 
